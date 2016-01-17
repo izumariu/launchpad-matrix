@@ -6,8 +6,8 @@ and 'color.txt'(also without the quotes). I recommend to put them in a seperated
 'sendstring'(everything without the quotes).
 Cases for sccontrol.txt:
 
-Off       : The script will do nothing.
-On        : The script will send a screensaver to the device.
+Off       : The script will do nothing. |
+On        : The script will send a screensaver to the device. |
 sendstring: The script will send 'sendstring.txt' in the color of 'color.txt' to the device.
 
 In sendstring.txt, you can type a line of text which will be sent to the device if the text in 'sccontrol.txt' is 'sendstring'.
@@ -20,13 +20,13 @@ color=< color >
 
 Vaild colors:
 
-red
-orange
-light_orange
-yellow
-light_yellow
-green
-light_green
+red |
+orange |
+light_orange |
+yellow |
+light_yellow |
+green |
+light_green |
 
 -------------------------------------------------------------------------------------------------------
 2) Configure the folder
