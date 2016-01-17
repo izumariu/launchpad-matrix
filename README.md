@@ -1,6 +1,8 @@
 1. Set up your cloud
 
-To get this thing to work, you have to create 3 files in your cloud: 'sccontrol.txt'(without the quotes), 'sendstring.txt'(without the quotes) and 'color.txt'(also without the quotes). I recommend to put them in a seperated folder. In sccontrol.txt, you can type 'Off', 'On' or 'sendstring'(everything without the quotes).
+To get this thing to work, you have to create 3 files in your cloud: 'sccontrol.txt'(without the quotes), 'sendstring.txt'(without the quotes) 
+and 'color.txt'(also without the quotes). I recommend to put them in a seperated folder. In sccontrol.txt, you can type 'Off', 'On' or 
+'sendstring'(everything without the quotes).
 Cases for sccontrol.txt:
 
 Off       : The script will do nothing.
@@ -27,7 +29,10 @@ light_green
 -------------------------------------------------------------------------------------------------------
 2. Configure the folder
 
-Open 'config.txt'(as always without the quotes) and enter the download links of the text files. If you use dropbox, please make sure that there is no '?dl=0' behind the name of the file, else the script won't do it's work. Make ALWAYS sure that the file you download doesn't change it's name. By example, if you use dropbox(yes, I unfortunately do), then delete the '?dl=0' behind the file's name, else it will be named like 'blabla.txt?dl=0'. Got it?
+Open the folder config/ and enter the download links of the text files. If you use dropbox, please make sure that there is no '?dl=0' 
+behind the name of the file, else the script won't do it's work. Make ALWAYS sure that the file you download doesn't change it's name. 
+By example, if you use dropbox(yes, I unfortunately do), then delete the '?dl=0' behind the file's name, else it will be named like
+'blabla.txt?dl=0'. Got it?
 -------------------------------------------------------------------------------------------------------
 3. Enjoy!
 

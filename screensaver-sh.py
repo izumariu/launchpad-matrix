@@ -9,8 +9,14 @@ lp.Open()
 
 call(["clear"])
 while 1:
+ where_sccontrol = open("config/sccontrol.txt").read()
+ where_sendstring = open("config/sendstring.txt").read()
+ where_color = open("config/color.txt").read()
+ where_sccontrol = where_sccontrol[:-1]
+ where_sendstring = where_sendstring[:-1]
+ where_color = where_color[:-1]
  call(["rm", "sccontrol.txt"])
- call(["wget", "https://www.dropbox.com/s/tfoxvht7vcuox0o/sccontrol.txt"])
+ call(["wget", "-t", "0", where_sccontrol])
  sccontrol = open("sccontrol.txt").read()
  if "On" in sccontrol:
      print("SCCONTROL = ON")
@@ -98,12 +104,12 @@ while 1:
  elif "sendstring" in sccontrol:
    print("SCCONTROL = SENDSTRING")
    call(["rm", "sendstring.txt"])
-   call(["wget", "https://www.dropbox.com/s/59ls5s3brunnjjj/sendstring.txt"])
+   call(["wget", "-t", "0", where_sendstring])
    sendstring = open("sendstring.txt").read()
    if "Off" not in sendstring:
     print("SENDSTRING != OFF")
     call(["rm", "color.txt"])
-    call(["wget", "https://www.dropbox.com/s/nk5mupj3nb8sho5/color.txt"])
+    call(["wget", "-t", "0",where_color])
     color = open("color.txt").read()
     if "color=yellow" in color:
      print("COLOR = YELLOW")
