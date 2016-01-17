@@ -32,6 +32,3 @@ Open 'config.txt'(as always without the quotes) and enter the download links of 
 3. Enjoy!
 
 Yeah, just navigate to the folder and execute the script 'screensaver-sh.py'(...no quotes :D). You can go to your cloud and edit the files now. Every time the script cycle completed, it will download the files and do things based on the strings from the files.
---------------------------------------------------------------------------------------------------------
-Credit to the guy who made the
-Launchpad library: https://github.com/FMMT666/launchpad.py
