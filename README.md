@@ -16,7 +16,7 @@ In color.txt, you can define a color. This color will be applied to the string i
 
 Syntax:
 
-color=<color>
+color=< color >
 
 Vaild colors:
 
