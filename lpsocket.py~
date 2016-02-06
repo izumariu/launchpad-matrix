@@ -1,0 +1,31 @@
+import socket
+import sys
+from thread import *
+HOST = ''
+PORT = 8888
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+print("Socket erstellt.")
+
+try:
+ s.bind((HOST, PORT))
+except socket.error as msg:
+ print("Binden fehlgeschlagen. Errorcode : " + str(msg[0]) + " Message " + msg[1])
+ sys.exit()
+
+print("Binden des Sockets abgeschlossen.")
+s.listen(10)
+print("Socket hoert jetzt die Nachrichten ab.")
+
+def clientthread(conn):
+ conn.send("Willkommen beim Launchpad der AK15. Text hier eingeben:\n")
+ data = conn.recv(1024)
+ reply = "KTHXBYE!"
+ conn.sendall(reply)
+ conn.close()
+
+while  1:
+ conn, addr = s.accept()
+ print("Mit " + addr[0] + " auf Port " + str(addr[1]) + " verbunden.")
+ start_new_thread(clientthread,(conn,))
+s.close()
