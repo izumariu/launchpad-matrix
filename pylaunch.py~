@@ -1,0 +1,19 @@
+import launchpad
+from pygame import time
+import random
+
+print("Pylaunch v0.1b, made by sesshomariu")
+
+while 1:
+	command = raw_input("pylaunch>")
+	if command is "exit":
+		break
+	elif command[:4] is "dev1":
+		if len(command) > 4:
+			args = command[4:]
+		else:
+			print("Missing arguments.")
+	elif command[:3] is "raw":
+		if len(command) > 
+	else:
+		print("Command not found. Type 'help' for a list of valid commands.\n")
